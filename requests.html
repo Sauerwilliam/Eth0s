@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/requests.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/navcss/nav_requests.css">
+<link type="text/css" href="css/OverlayScrollbars.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="topnav">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="requests.html">Requests</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+</div>
+<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc_YdIWtutsPMuqOuo_4sTAfUlcldyT0-qjGtUNt7MQVtgZDg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div id="chat" class="chat">
+    <button class="button" onclick="document.getElementById('chat').classList.toggle('closed');">Chat</button>
+    <div id="messages" class="messages"></div>
+    <input id="input" type="text" placeholder="Say something..." autocomplete="off">
+</div>
+<div id="scrolling"></div>
+<script type="text/javascript" src="./Javascript/index.js"></script>
+<script type="text/javascript" src="./Javascript/constants.js"></script>
+<script type="text/javascript" src="./Javascript/OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), {
+                className       : "os-theme-light",
+                resize          : "both",
+                sizeAutoCapable : true,
+                paddingAbsolute : true,
+                scrollbars : {
+                    clickScrolling : true
+                }
+                
+         });
+    });
+
+</script>
+</body>
+</html>

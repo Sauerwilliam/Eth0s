@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Urbanist);
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #05162a;
+    overflow: hidden;
+}
+:root{
+    color-scheme: dark;
+}
+.started a{
+    position: absolute;
+    z-index: 0;
+    margin-left: 40vw;
+    margin-top: 35vh;
+    width: 20vw;
+    height: 2vh;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    padding: 1% 0px;
+    color: white;
+    font-size: 1.5vh;
+    text-align: center;
+    border-radius: 12px;
+    background: radial-gradient(#4653fd, #5763ff);
+}
+.welcomeText{
+    font-size: 5vw;
+    top: 5vh;
+    left: 13.5vw;
+    font-family: Urbanist; 
+    font-weight: bold;
+    white-space: nowrap;
+    display: table;
+    position: absolute;
+    z-index: 0;
+}
+.welcome{
+    z-index: -1;
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    color: white;
+}
+
+.device .need{
+    top: 65vh;
+    font-size: 5vw;
+    left: 10vw;
+    text-align: center;
+    font-style: bold;
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+.device .have{
+    white-space: nowrap;
+    top: 65vh;
+    font-size: 5vw;
+    left: 62vw;
+    font-style: bold;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    color: white;
+}
+#logo{
+    width: 100vw;
+    margin-top: -10vh;
+    margin-left: auto;
+}
+
+.device .image{
+    width: 20vw;
+    top: 62vh;
+    left: 40vw;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+}
+#radial{
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: 50%;
+	border-radius: 50% 22% 40% 80%;  
+	filter: blur(100px);
+    background: linear-gradient(to bottom left,#118c97, #092b4d);
+    opacity: 0.5;
+}

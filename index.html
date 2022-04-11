@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/navcss/nav_home.css">
+<link type="text/css" href="css/OverlayScrollbars.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/Desktopcss/DesktopIndex.css">
+</head>
+<body>
+<div class="topnav">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="requests.html">Requests</a>
+        <div class="animation start-home"></div>
+    </nav>
+</div>
+<div class="welcome">
+    <p class="welcomeText">Welcome to the future of hacking. <br> Welcome to Eth0s.</p>
+    <img id="logo" Cache-Control: max-age=31536000 class="image" src="images/Fade_logo.png">
+</div>
+<div class="device">
+    <p class="need">We have the<br><span style="background: linear-gradient(to bottom right, #00b6a4, #02569e); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">tools</span>.</p>
+    <p class="have">For devices you<br><span style="background: linear-gradient(to bottom right, #00b6a4, #02569e); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">have</span>.</p>
+    <img Cache-Control: max-age=31536000 id="bottom" class="image" src="images/IMG_1501.png">
+    <div id="radial"></div>
+</div>
+
+<div class="started">
+    <a id="started" href="download.html">Get Started</a>
+</div>
+<div id="chat" class="chat">
+    <button class="button" onclick="document.getElementById('chat').classList.toggle('closed');">Chat</button>
+    <div id="messages" class="messages"></div>
+    <input id="input" type="text" placeholder="Say something..." autocomplete="off">
+</div>
+<script type="text/javascript" src="./Javascript/index.js"></script>
+<script type="text/javascript" src="./Javascript/constants.js"></script>
+<script type="text/javascript" src="./Javascript/OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), {
+                className       : "os-theme-light",
+                resize          : "both",
+                sizeAutoCapable : true,
+                paddingAbsolute : true,
+                scrollbars : {
+                    clickScrolling : true
+                }
+                
+         });
+    });
+
+</script>
+</body>
+</html>

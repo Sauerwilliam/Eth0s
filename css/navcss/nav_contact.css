@@ -1,0 +1,74 @@
+nav{
+    z-index: 0; 
+	position: relative;
+	margin: 6vh auto 0;
+	width: 80vw;
+	height: 5vh;   
+	background: #081423;
+	border-radius: 12px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 1.5vh;
+	top: -1.5vh;
+	color: white;
+	text-decoration: none;
+	line-height: 8vh;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	box-shadow: 0px 0px 7px 1px #4652fd40;
+	position: absolute;
+	height: 5vh;
+	top: 0;
+	z-index: 0;
+	background: radial-gradient(#4653fd, #5763ff);
+	border-radius: 12px;
+	transition: all 0s ease 0s;
+}
+nav a:nth-child(1){
+	width: 20vw;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 20vw;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 20vw;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 20vw;
+	left: 20vw;
+}
+nav a:nth-child(3){
+	width: 20vw;
+}
+nav .start-home, a:nth-child(3):hover~.animation{
+	width: 20vw;
+	left: 40vw;
+}
+nav a:nth-child(4){
+	width: 20vw;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 20vw;
+	left: 60vw;
+}
+@media only screen and (min-width: 768px) {
+	nav a{
+		top: 0;
+		font-size: 3vh;
+	}
+	nav{
+		height: 8vh;
+	}
+	nav .animation{
+		transition: all 0.5s ease 0s;
+		height: 8vh;
+	}
+}
+	

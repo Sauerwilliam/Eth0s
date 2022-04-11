@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/navcss/nav_about.css">
+<link type="text/css" href="css/OverlayScrollbars.css" rel="stylesheet"/>
+<script type="text/javascript" src="path/to/OverlayScrollbars.js"></script>
+</head>
+<body>
+<div class="topnav">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="requests.html">Requests</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+</div>
+<div class="group">
+    <p>The <span style="background: linear-gradient(to bottom right, #00b6a4, #02569e); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Eth0s</span> Group</p>
+</div>
+<div class="Crew" style="width: 100vw; height: 30vh;">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/Generic pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/Hezys pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/iqs pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/Quarterbrain pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/Razer pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/jsolo pfp.png">
+    <img Cache-Control: max-age=31536000 class="img" src="images/Avatars/Bogo pfp.png">
+    <div id="crew" style="width: 95vw; height: 20vh;">
+</div>
+</div>
+<div>
+    <img Cache-Control: max-age=31536000 id="mission" src="images/aQESlj5D_4x.png">
+</div>
+</div>
+<div id="chat" class="chat">
+    <button class="button" onclick="document.getElementById('chat').classList.toggle('closed');">Chat</button>
+    <div id="messages" class="messages"></div>
+    <input id="input" type="text" placeholder="Say something..." autocomplete="off">
+</div>
+</div>
+<script type="text/javascript" src="./Javascript/index.js"></script>
+<script type="text/javascript" src="./Javascript/constants.js"></script>
+<script type="text/javascript" src="./Javascript/OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), {
+                className       : "os-theme-light",
+                resize          : "both",
+                sizeAutoCapable : true,
+                paddingAbsolute : true,
+                scrollbars : {
+                    clickScrolling : true
+                }
+                
+         });
+    });
+
+</script>
+</body>
+</html>
